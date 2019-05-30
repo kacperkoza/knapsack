@@ -1,4 +1,4 @@
-package io.knapsack
+package io.knapsack.knapsack
 
 interface HeuristicEvaluator {
 

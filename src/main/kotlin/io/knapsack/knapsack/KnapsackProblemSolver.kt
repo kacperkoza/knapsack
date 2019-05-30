@@ -1,4 +1,4 @@
-package io.knapsack
+package io.knapsack.knapsack
 
 interface KnapsackProblemSolver {
 
@@ -37,7 +37,12 @@ class GreedyKnapsackProblem : KnapsackProblemSolver {
 
     override fun findSolution(items: MutableList<Item>, knapsack: Knapsack): Knapsack {
         val itemsWithValue = items
-            .map { ItemWithValue(it, it.value.toDouble() / it.weight.toDouble()) }
+            .map {
+                ItemWithValue(
+                    it,
+                    it.value.toDouble() / it.weight.toDouble()
+                )
+            }
             .sortedByDescending { it.valueToWeightRatio }
             .toMutableList()
 

@@ -1,5 +1,13 @@
 package io.knapsack
 
+import io.knapsack.knapsack.BruteForceKnapsackProblem
+import io.knapsack.knapsack.GreedyKnapsackProblem
+import io.knapsack.knapsack.HillClimbingKnapsackProblemSolver
+import io.knapsack.knapsack.Item
+import io.knapsack.knapsack.Knapsack
+import io.knapsack.knapsack.SimpleNeighborGenerator
+import io.knapsack.knapsack.ValueToWeightRatioEvaluator
+
 class KnapsackComparisonTest extends KnapsackProblemSpec {
 
     def items = generateItems()

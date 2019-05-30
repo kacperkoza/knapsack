@@ -1,6 +1,7 @@
 package io.knapsack
 
-import org.spockframework.compiler.model.Spec
+import io.knapsack.knapsack.Item
+import io.knapsack.knapsack.KnapsackProblemSolver
 import spock.lang.Specification
 
 class KnapsackProblemSpec extends Specification {
